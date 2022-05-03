@@ -5,13 +5,11 @@ import './SearchPanel.scss';
 
 const SearchPanel = () => {
   return (
-    <div className="search-wrapper">
-      <InputBase
-        className="search-button"
-        placeholder="Поиск в Твиттере"
-        fullWidth
-      />
-    </div>
+    <InputBase
+      className="search-button"
+      placeholder="Поиск в Твиттере"
+      fullWidth
+    />
   );
 };
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-import SearchPanel from '../../components/SearchPanel';
-import NavMenu from '../NavMenu';
+import NavMenu from '../../components/NavMenu';
 
 import './Layout.scss';
+import PanelRight from '../PanelRight';
 
 const Layout: React.FC = (): React.ReactElement => {
   return (
@@ -22,9 +22,7 @@ const Layout: React.FC = (): React.ReactElement => {
           <Outlet />
         </div>
         <div className="layout-right">
-          <div className="sticky-top">
-            <SearchPanel />
-          </div>
+          <PanelRight />
         </div>
       </div>
     </section>
