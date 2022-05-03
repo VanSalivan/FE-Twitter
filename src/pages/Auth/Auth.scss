@@ -1,0 +1,57 @@
+@import '../../styles/variabless.scss';
+
+.auth {
+  &__login {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image-bg {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__login-wrapper {
+    padding: 0 16px;
+    max-width: 560px;
+  }
+}
+
+.modal {
+  &-loginSide {
+    display: flex;
+    flex: 0 0 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-loginSideTwitterIcon {
+    width: 48;
+    height: 48;
+  }
+
+  &-loginsidetitle {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 72px;
+    margin-top: 26px;
+  }
+
+  &-loginSideRegisterBtn {
+    margin-top: 15px;
+    margin-bottom: 16px;
+  }
+
+  &-loginSideField {
+    margin-bottom: 10px !important;
+  }
+}

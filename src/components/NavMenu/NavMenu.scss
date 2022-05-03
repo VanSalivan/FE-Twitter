@@ -1,0 +1,40 @@
+@import '../../styles/variabless.scss';
+
+.nav {
+  &__logo {
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+    cursor: pointer;
+    padding: 10px;
+    padding-right: 25px;
+
+    &:hover {
+      color: $tweetter-color;
+      border-radius: 24px;
+    }
+
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-left: 16px;
+
+      @media (max-width: $desktop) {
+        display: none;
+      }
+    }
+  }
+
+  &__item-button {
+    max-width: 270px;
+    padding: 0 10px;
+  }
+}
+
+.MuiButton-root.tweet-btn {
+  padding: 25px;
+}

@@ -1,0 +1,36 @@
+@import '../../styles/variabless.scss';
+
+.section-wrap {
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 21% 47% 32%;
+
+  @media (max-width: $desktop) {
+    grid-template-columns: 10% 65% 25%;
+  }
+
+  &-left {
+  }
+
+  &-main {
+    border-left: 2px solid $color-grey-dark;
+    border-right: 2px solid $color-grey-dark;
+  }
+
+  &-right {
+  }
+}
+
+.header-main {
+  padding: 20px;
+  border-bottom: 2px solid $color-grey-dark;
+
+  &__title {
+    font-size: 22px;
+    font-weight: 800;
+  }
+}

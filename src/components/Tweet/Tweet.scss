@@ -1,0 +1,80 @@
+@import '../../styles/variabless.scss';
+
+.tweet {
+  display: flex;
+  padding: 15px 10px 20px;
+  border-bottom: 1px solid $color-grey;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: rgb(245, 248, 250);
+  }
+
+  &__left {
+    flex-basis: 48px;
+    margin-right: 12px;
+  }
+
+  &__right {
+    padding-top: 5px;
+    text-align: start;
+  }
+
+  &__nickname {
+    font-weight: 800;
+  }
+
+  &__text-grey {
+    color: grey;
+  }
+
+  &__content {
+    font-size: 16px;
+    margin-top: 6px;
+    padding-bottom: 10px;
+  }
+}
+
+.tweet-buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 480px;
+  position: relative;
+  left: -8px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      padding: 8px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &:hover {
+      color: $tweetter-color;
+
+      svg {
+        background-color: $color-grey-dark;
+        border-radius: 50%;
+      }
+    }
+
+    &--share {
+      &:hover {
+        color: rgb(91, 175, 57);
+      }
+    }
+    &--like {
+      &:hover {
+        color: red;
+      }
+    }
+
+    &-count {
+      margin-left: 5px;
+    }
+  }
+}

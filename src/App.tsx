@@ -1,7 +1,12 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-const App = () => {
-  return <div className="App">текст</div>;
-};
+import TwitterRoutes from './routes/TwitterRoutes';
+
+const App = () => (
+  <BrowserRouter >
+    <TwitterRoutes />
+  </BrowserRouter>
+);
 
 export default App;
