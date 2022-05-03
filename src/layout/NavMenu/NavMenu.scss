@@ -1,6 +1,9 @@
 @import '../../styles/variabless.scss';
 
 .nav {
+  display: flex;
+  flex-direction: column;
+
   &__logo {
     margin-bottom: 16px;
   }
@@ -8,10 +11,10 @@
   &__item {
     display: inline-flex;
     align-items: center;
-    margin-bottom: 16px;
-    cursor: pointer;
     padding: 10px;
     padding-right: 25px;
+    margin-bottom: 16px;
+    cursor: pointer;
 
     &:hover {
       color: $tweetter-color;

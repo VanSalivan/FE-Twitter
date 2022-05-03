@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import TwitterRoutes from './routes/TwitterRoutes';
+import BasicRoutes from './routes/BasicRoutes';
 
 const App = () => (
   <BrowserRouter >
-    <TwitterRoutes />
+    <BasicRoutes />
   </BrowserRouter>
 );
 

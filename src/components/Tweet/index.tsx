@@ -35,23 +35,21 @@ const Tweet: React.FC<TweetProps> = ({ user, text }): React.ReactElement => {
         <div className="tweet__buttons tweet-buttons">
           <div className="tweet-buttons__item">
             <ChatBubbleOutlineOutlinedIcon />
-            <span className="tweet-buttons__item-count">1</span>
+            <span>1</span>
           </div>
 
-          <div className="tweet-buttons__item tweet-buttons__item--share">
+          <div className="tweet-buttons__item">
             <RepeatIcon />
-            <span className="tweet-buttons__item-count"></span>
           </div>
 
           <div className="tweet-buttons__item tweet-buttons__item--like">
             <FavoriteBorderOutlinedIcon />
-
-            <span className="tweet-buttons__item-count">1</span>
+            <span>1</span>
           </div>
 
           <div className="tweet-buttons__item">
             <IosShareOutlinedIcon />
-            <span className="tweet-buttons__item-count">1</span>
+            <span>1</span>
           </div>
         </div>
       </div>

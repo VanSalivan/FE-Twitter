@@ -5,9 +5,10 @@
   margin: 0 auto;
 }
 
-.home {
+.layout {
   display: grid;
   grid-template-columns: 21% 47% 32%;
+  height: 100vh;
 
   @media (max-width: $desktop) {
     grid-template-columns: 10% 65% 25%;
@@ -19,18 +20,20 @@
   &-main {
     border-left: 2px solid $color-grey-dark;
     border-right: 2px solid $color-grey-dark;
+
+    .header-main {
+      padding: 20px;
+      border-bottom: 2px solid $color-grey-dark;
+      background-color: $white-background;
+      z-index: $start-z;
+
+      &__title {
+        font-size: 22px;
+        font-weight: 800;
+      }
+    }
   }
 
   &-right {
-  }
-}
-
-.header-main {
-  padding: 20px;
-  border-bottom: 2px solid $color-grey-dark;
-
-  &__title {
-    font-size: 22px;
-    font-weight: 800;
   }
 }
