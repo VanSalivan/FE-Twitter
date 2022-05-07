@@ -1,5 +1,5 @@
 @import-normalize;
-@import './styles/variabless.scss';
+@import './variabless.scss';
 
 * {
   margin: 0;
@@ -31,4 +31,5 @@ body {
 .sticky-top {
   position: sticky;
   top: 0;
+  z-index: $z-index-initial;
 }
