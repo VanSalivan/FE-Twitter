@@ -1,6 +1,22 @@
-.search-button.css-luel6v-MuiInputBase-root {
-  border-radius: 24px;
-  background-color: #e6ecf0;
-  height: 45px;
-  padding: 5px 10px 5px 55px;
+@import '../../styles/variabless.scss';
+
+.search-button {
+  &.css-luel6v-MuiInputBase-root {
+    border-radius: 24px;
+    background-color: #e6ecf0;
+    height: 45px;
+    padding: 5px 10px 5px 55px;
+  }
+
+  &__wrap {
+    padding: 20px 20px 0 20px;
+    background-color: $theme-light;
+  }
+
+  &__icon {
+    position: absolute;
+    z-index: $z-index-initial;
+    left: 34px;
+    top: 30px;
+  }
 }
