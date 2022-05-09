@@ -10,7 +10,7 @@
   grid-template-columns: 21% 47% 32%;
   height: 100vh;
 
-  @media (max-width: $desktop) {
+  @media (max-width: $desktop-lg) {
     grid-template-columns: 10% 65% 25%;
   }
 
@@ -24,7 +24,7 @@
     .header-main {
       padding: 20px;
       border-bottom: 2px solid $color-grey-dark;
-      background-color: $theme-light;
+      background-color: $theme-color-main;
 
       &__title {
         font-size: 22px;

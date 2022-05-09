@@ -1,22 +1,31 @@
 @import '../../styles/variabless.scss';
 
 .search-button {
-  &.css-luel6v-MuiInputBase-root {
+  &.css-1le28he-MuiInputBase-root {
+    width: 100%;
     border-radius: 24px;
     background-color: #e6ecf0;
-    height: 45px;
-    padding: 5px 10px 5px 55px;
+    height: 30px;
+    padding: 5px 10px 5px 40px;
+
+    @media (min-width: $tablet-sm) {
+      height: 45px;
+    }
   }
 
   &__wrap {
-    padding: 20px 20px 0 20px;
-    background-color: $theme-light;
+    flex-grow: 1;
+    background-color: $theme-color-main;
+  }
+
+  &__label {
+    position: relative;
   }
 
   &__icon {
     position: absolute;
     z-index: $z-index-initial;
-    left: 34px;
-    top: 30px;
+    left: 10px;
+    top: 0px;
   }
 }

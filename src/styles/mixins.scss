@@ -1,0 +1,9 @@
+@mixin padding-inline {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@mixin padding-inline--sm {
+  padding-left: 4px;
+  padding-right: 4px;
+}

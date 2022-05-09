@@ -8,7 +8,7 @@ import { theme } from './styles/theme';
 import './styles/main.scss';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement,
+  document.getElementById('react-root') as HTMLElement,
 );
 root.render(
   <React.StrictMode>

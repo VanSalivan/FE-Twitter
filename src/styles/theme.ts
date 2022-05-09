@@ -3,6 +3,15 @@
 import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 320,
+      sm: 500,
+      md: 986,
+      lg: 1270,
+      xl: 1500,
+    },
+  },
   palette: {
     primary: {
       main: 'rgb(29, 161, 242)',

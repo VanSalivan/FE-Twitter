@@ -20,6 +20,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#react-root {
+  display: flex;
+  height: 100%;
+}
+
 .wrapper {
   height: 100vh;
 

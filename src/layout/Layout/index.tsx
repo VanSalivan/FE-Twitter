@@ -1,7 +1,8 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-import NavMenu from '../../components/NavMenu';
+import Header from '../Header/Header';
+import NavMenu from '../../components/NavMenu/NavMenu';
 import SearchPanel from '../../components/SearchPanel';
 import Tweet from '../../components/Tweet';
 
@@ -9,8 +10,9 @@ import './Layout.scss';
 
 const Layout: React.FC = (): React.ReactElement => {
   return (
-    <section className="section-wrap">
-      <div className="layout">
+    <>
+      <Header />
+      {/* <div className="layout">
         <div className="layout-left">
           <div className="sticky-top">
             <NavMenu />
@@ -41,8 +43,8 @@ const Layout: React.FC = (): React.ReactElement => {
             />
           </div>
         </div>
-      </div>
-    </section>
+      </div> */}
+    </>
   );
 };
 

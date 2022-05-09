@@ -7,15 +7,14 @@ import './SearchPanel.scss';
 const SearchPanel = () => {
   return (
     <div className="search-button__wrap">
-      <label>
+      <label className="search-button__label">
         <SearchIcon className="search-button__icon" />
         <InputBase
           className="search-button"
           placeholder="Поиск в Твиттере"
-          fullWidth
         />
       </label>
-    </div>  
+    </div>
   );
 };
 

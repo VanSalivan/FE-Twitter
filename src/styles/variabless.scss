@@ -1,13 +1,16 @@
 // colors
-$tweetter-color: #1da1f2;
 $color-grey: rgb(245, 248, 250);
 $color-grey-dark: rgb(235, 239, 240);
-$theme-light: #ffff;
+
+$theme-color-main: #ffff;
+$theme-color-twitter:#1da1f2;
+$theme-color-border: rgb(235, 239, 240);
 
 // breakpoints
-$desktop: 1200px;
-$tablet: 772px;
-
+$tablet-sm: 500px;
+$tablet-md: 986px;
+$desktop-lg: 1270px;
+$desktop-xl: 1500px;
 
 // z-index:
 $z-index-initial: 1;
