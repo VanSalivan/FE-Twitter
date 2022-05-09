@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Button, Typography,  TextField, FormControl, FormGroup } from '@mui/material';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
-import './Auth.scss';
 import ModalDialog from '../../components/ModalDialog';
+
+import './Auth.scss';
 
 const Auth = () => {
   const [visibleModal, setVisibleModal] = useState<'LogIn' | 'Registry'>();
@@ -20,9 +21,8 @@ const Auth = () => {
     setVisibleModal(undefined);
   };
 
-
   return (
-    <div className="wrapper wrapper--flex">
+    <>
       <div className="auth__image-bg" />
       <section className="auth__login">
         <div className="auth__login-wrapper">
@@ -94,7 +94,7 @@ const Auth = () => {
           </ModalDialog>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

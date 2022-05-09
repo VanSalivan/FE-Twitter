@@ -1,23 +1,14 @@
 @import '../../styles/variabless.scss';
 
-.section-wrap {
-  max-width: 1560px;
-  margin: 0 auto;
-}
-
 .layout {
-  display: grid;
-  grid-template-columns: 21% 47% 32%;
-  height: 100vh;
+  display: flex;
 
-  @media (max-width: $desktop-lg) {
-    grid-template-columns: 10% 65% 25%;
+  @media (max-width: $tablet-sm) {
+    padding-top: 50px;
   }
 
-  &-left {
-  }
-
-  &-main {
+  &__main {
+    max-width: 600px;
     border-left: 2px solid $color-grey-dark;
     border-right: 2px solid $color-grey-dark;
 
@@ -33,9 +24,17 @@
     }
   }
 
-  &-right {
-    &__content {
-      padding: 20px;
+  &__aside {
+    max-width: 386px;
+    margin-left: 10px;
+
+    &-header {
+      background-color: $theme-color-main;
+      padding: 10px 15px 0;
+    }
+
+    &-content {
+      padding: 10px 15px 10px;
     }
   }
 }

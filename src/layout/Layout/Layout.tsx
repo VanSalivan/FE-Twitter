@@ -2,39 +2,36 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 
 import Header from '../Header/Header';
-import NavMenu from '../../components/NavMenu/NavMenu';
 import SearchPanel from '../../components/SearchPanel';
 import Tweet from '../../components/Tweet';
 
 import './Layout.scss';
+import { Hidden } from '@mui/material';
 
-const Layout: React.FC = (): React.ReactElement => {
-  return (
-    <>
-      <Header />
-      {/* <div className="layout">
-        <div className="layout-left">
-          <div className="sticky-top">
-            <NavMenu />
-          </div>
-        </div>
-        <div className="layout-main">
+const Layout: React.FC = (): React.ReactElement => (
+  <>
+    <Header />
+    <div className="layout">
+      <div className="layout__main">
+        <Hidden smDown>
           <div className="header-main sticky-top">
             <h5 className="header-main__title">Главная</h5>
           </div>
-          <Outlet />
-        </div>
-        <div className="layout-right">
-          <div className="sticky-top">
+        </Hidden>
+        <Outlet />
+      </div>
+      <Hidden mdDown>
+        <div className="layout__aside">
+          <div className="layout__aside-header sticky-top">
             <SearchPanel />
           </div>
-          <div className="layout-right__content">
+          <div className="layout__aside-content">
             <Tweet
               user={{
                 nickname: 'Dan',
                 author: 'dan_abramov',
                 avatarUrl:
-            'https://external-preview.redd.it/yCIdRVIdKSZlwTacwwnrqx6o-ou1GNYc-WI24p_w6xE.jpg?auto=webp&s=222ab63c87addc7117b32dcbaee992fbfc60aefc',
+                    'https://external-preview.redd.it/yCIdRVIdKSZlwTacwwnrqx6o-ou1GNYc-WI24p_w6xE.jpg?auto=webp&s=222ab63c87addc7117b32dcbaee992fbfc60aefc',
               }}
               text={`“when people are rude to you, don’t forget that they might be cranky
           for an entirely unrelated reason that you can’t influence and they
@@ -43,9 +40,10 @@ const Layout: React.FC = (): React.ReactElement => {
             />
           </div>
         </div>
-      </div> */}
-    </>
-  );
-};
+      </Hidden>
+    </div>
+  </>
+);
+
 
 export default Layout;

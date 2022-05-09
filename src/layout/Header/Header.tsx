@@ -11,16 +11,18 @@ import { Hidden } from '@mui/material';
 const Header = () => (
   <div className="header">
     <div className="header__container">
-      <div className="header__logo">
-        <TwitterIcon sx={{ fontSize: '36px' }}  />
+      <div className="header__content">
+        <div className="header__logo">
+          <TwitterIcon sx={{ fontSize: '36px' }} />
+        </div>
+        <Hidden smUp>
+          <SearchPanel />
+          <MoreHorizIcon />
+        </Hidden>
+        <Hidden smDown>
+          <NavMenu />
+        </Hidden>
       </div>
-      <Hidden smUp>
-        <SearchPanel />
-        <MoreHorizIcon />
-      </Hidden>
-      <Hidden smDown>
-        <NavMenu />
-      </Hidden>
     </div>
   </div>
 );

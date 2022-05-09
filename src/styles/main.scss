@@ -12,6 +12,7 @@ ul {
 }
 
 body {
+  height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -22,15 +23,6 @@ body {
 
 #react-root {
   display: flex;
-  height: 100%;
-}
-
-.wrapper {
-  height: 100vh;
-
-  &--flex {
-    display: flex;
-  }
 }
 
 .sticky-top {
