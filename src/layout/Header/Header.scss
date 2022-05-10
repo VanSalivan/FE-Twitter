@@ -4,7 +4,7 @@
 .header {
   display: flex;
   justify-content: center;
-  flex-basis: 25%;
+  flex-basis: 20%;
   background-color: $theme-color-main;
 
   svg:not(.search-button__wrap svg, .nav__item-button svg) {
