@@ -8,6 +8,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: $tablet-sm) {
+      width: 100%;
+      background-image: url(https://source.unsplash.com/random);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__image-bg {
@@ -24,6 +32,13 @@
   &__login-wrapper {
     padding: 0 16px;
     max-width: 560px;
+
+    @media (max-width: $tablet-sm) {
+      padding: 16px;
+
+      background: rgba(255, 255, 255, 0.692);
+      box-shadow: 0 0 1rem 0 rgba(41, 39, 39, 0.2);
+    }
   }
 }
 
