@@ -21,7 +21,7 @@
   }
 
   &__nickname {
-    font-weight: 800;
+    font-weight: 600;
   }
 
   &__text-grey {
@@ -59,14 +59,6 @@
       svg {
         background-color: $color-grey-dark;
         border-radius: 50%;
-      }
-    }
-
-    &--like {
-      &:hover {
-        svg {
-          color: rgb(252, 2, 2);
-        }
       }
     }
   }

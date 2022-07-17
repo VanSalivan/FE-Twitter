@@ -42,7 +42,7 @@ const Tweet: React.FC<TweetProps> = ({ user, text }): React.ReactElement => {
             <RepeatIcon />
           </div>
 
-          <div className="tweet-buttons__item tweet-buttons__item--like">
+          <div className="tweet-buttons__item">
             <FavoriteBorderOutlinedIcon />
             <span>1</span>
           </div>
