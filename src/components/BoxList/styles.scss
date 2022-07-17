@@ -1,0 +1,28 @@
+@import '../../styles/variabless.scss';
+
+.box-list {
+  background-color: $color-grey-dark;
+  border-radius: 16px;
+
+  &__title {
+    font-size: 19px;
+    font-weight: 600;
+    overflow-wrap: break-word;
+
+    padding: 11px 15px;
+  }
+
+  &__item {
+    padding: 11px 15px;
+    cursor: pointer;
+
+    &:last-of-type {
+      border-bottom-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+    }
+
+    &:hover {
+      background-color: darken($color-grey-dark, 5);
+    }
+  }
+}

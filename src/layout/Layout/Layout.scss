@@ -9,33 +9,33 @@
 }
 
 .main {
-  max-width: 700px;
-  border-left: 2px solid $color-grey-dark;
-  border-right: 2px solid $color-grey-dark;
-}
+  flex-basis: 615px;
+  border-left: 1px solid $color-grey-dark;
+  border-right: 1px solid $color-grey-dark;
 
-.header-main {
-  padding: 20px;
-  border-bottom: 2px solid $color-grey-dark;
-  background-color: $theme-color-main;
+  .header-main {
+    padding: 10px 20px 20px 20px;
+    border-bottom: 1px solid $color-grey-dark;
+    background-color: $theme-color-main;
 
-  &__title {
-    font-size: 22px;
-    font-weight: 800;
+    &__title {
+      font-size: 22px;
+      font-weight: 800;
+    }
   }
 }
 
 .aside {
+  flex-basis: 360px;
   margin-left: 10px;
 
   &__container {
-    max-width: 386px;
     height: 100%;
   }
 
   &__header {
     background-color: $theme-color-main;
-    padding: 20px 15px 0;
+    padding: 10px 15px 2px;
   }
 
   &__content {

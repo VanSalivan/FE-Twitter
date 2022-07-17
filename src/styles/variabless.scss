@@ -4,7 +4,7 @@ $color-grey-dark: rgb(235, 239, 240);
 
 $theme-color-main: #ffff;
 $theme-color-twitter:#1da1f2;
-$theme-color-border: rgb(235, 239, 240);
+$theme-color-border: $color-grey-dark;
 
 // breakpoints
 $tablet-sm: 500px;

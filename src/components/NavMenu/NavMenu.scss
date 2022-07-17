@@ -4,10 +4,6 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-md) {
-    min-width: 253px;
-  }
-
   &__item {
     display: inline-flex;
     align-items: center;

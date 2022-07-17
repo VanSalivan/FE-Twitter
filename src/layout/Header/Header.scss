@@ -3,8 +3,8 @@
 
 .header {
   display: flex;
-  justify-content: center;
-  flex-basis: 20%;
+ justify-content: flex-end;
+  flex: 1 0 28%;
   background-color: $theme-color-main;
 
   svg:not(.search-button__wrap svg, .nav__item-button svg) {
@@ -15,7 +15,7 @@
   }
 
   @media (max-width: $tablet-md) {
-    flex-basis: 15%;
+    flex: 1 0 15%;
     justify-content: flex-end;
   }
 
@@ -37,6 +37,8 @@
   }
 
   &__content {
+    max-width: 253px;
+    padding: 0 11px;
     position: sticky;
     top: 0;
     z-index: $z-index-initial;
