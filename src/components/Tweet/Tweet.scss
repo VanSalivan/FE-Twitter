@@ -16,7 +16,7 @@
   }
 
   &__right {
-    padding-top: 5px;
+    width: 100%;
     text-align: start;
   }
 
@@ -32,6 +32,11 @@
     font-size: 14px;
     margin-top: 6px;
     padding-bottom: 10px;
+  }
+
+  &__indent {
+    height: 10px;
+    background: $theme-color-border;
   }
 }
 

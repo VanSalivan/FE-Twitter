@@ -1,5 +1,6 @@
 import React from 'react';
 import { Avatar } from '@mui/material';
+
 import RepeatIcon from '@mui/icons-material/Repeat';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
@@ -32,7 +33,7 @@ const Tweet: React.FC<TweetProps> = ({ user, text }): React.ReactElement => {
         <span className="tweet__text-grey"> ·</span>
         <span className="tweet__text-grey"> 1 ч</span>
         <div className="tweet__content">{text}</div>
-        <div className="tweet__buttons tweet-buttons">
+        <div className="tweet__footer tweet-buttons">
           <div className="tweet-buttons__item">
             <ChatBubbleOutlineOutlinedIcon />
             <span>1</span>
