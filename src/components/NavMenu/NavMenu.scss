@@ -1,27 +1,29 @@
-@import '../../styles/variabless.scss';
+@import "../../styles/variabless.scss";
 
 .nav {
   display: flex;
   flex-direction: column;
 
   &__item {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-top: 12px;
+    padding-right: 16px;
     cursor: pointer;
 
     &:hover {
-      color: $theme-color-twitter;
+      border-radius: 24px;
+      background-color: $theme-color-border;
     }
 
     @media (max-width: $tablet-md) {
+      padding-right: 0;
       justify-content: center;
     }
 
     &-title {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
-      margin-left: 5px;
     }
   }
 

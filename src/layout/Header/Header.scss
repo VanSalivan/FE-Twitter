@@ -1,10 +1,10 @@
-@import '../../styles/variabless.scss';
-@import '../../styles/mixins.scss';
+@import "../../styles/variabless.scss";
+@import "../../styles/mixins.scss";
 
 .header {
   display: flex;
- justify-content: flex-end;
-  flex: 1 0 28%;
+  justify-content: center;
+  flex: 1 0 25%;
   background-color: $theme-color-main;
 
   svg:not(.search-button__wrap svg, .nav__item-button svg) {
@@ -15,8 +15,7 @@
   }
 
   @media (max-width: $tablet-md) {
-    flex: 1 0 15%;
-    justify-content: flex-end;
+    flex: 1 0 10%;
   }
 
   @media (max-width: $tablet-sm) {
@@ -37,8 +36,6 @@
   }
 
   &__content {
-    max-width: 253px;
-    padding: 0 11px;
     position: sticky;
     top: 0;
     z-index: $z-index-initial;
@@ -63,5 +60,11 @@
     justify-content: center;
     align-items: center;
     color: $theme-color-twitter;
+    border-radius: 24px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-grey-dark;
+    }
   }
 }

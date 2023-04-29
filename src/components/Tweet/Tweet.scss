@@ -1,4 +1,4 @@
-@import '../../styles/variabless.scss';
+@import "../../styles/variabless.scss";
 
 .tweet {
   display: flex;
@@ -7,7 +7,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: rgb(245, 248, 250);
+    background-color: $color-grey;
   }
 
   &__left {
